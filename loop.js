@@ -3,9 +3,9 @@
 
 //1: 10,X,2 | 10: 10,10,X | 11: 10,X,1,2
 
-localStorage.setItem("username",localStorage.getItem("username")|Math.random());
-var cloud_last_remixed = cloud_last_remixed|-1;
-var cloud_remixes = cloud_remixes|0;
+localStorage.setItem("username",typeof localStorage.getItem("username")==undefined?Math.random():localStorage.getItem("username"));
+var cloud_last_remixed = typeof cloud_last_remixed==undefined?-1:cloud_last_remixed;
+var cloud_remixes = typeof cloud_remixes==undefined?0:cloud_remixes;
 
 function stack(init,num){
     prefix = [10]
